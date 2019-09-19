@@ -1,0 +1,47 @@
+@charset "ISO-8859-1";
+
+:root{
+  --box-size: 20em;
+}
+
+#box-container{
+  display: grid;
+  grid-template-columns: repeat(2, var(--box-size));
+  grid-template-rows: repeat(2, var(--box-size));
+}
+
+#box-1{
+  background-color: blue;
+  border: calc(var(--box-size) / 10) solid darkblue;
+}
+#box-1:hover{
+  background-color: darkblue;
+  border: calc(var(--box-size) / 10) solid blue;
+}
+
+#box-2{
+  background-color: red;
+  border: calc(var(--box-size) / 10) solid darkred;
+}
+#box-2:hover{
+  background-color: darkred;
+  border: calc(var(--box-size) / 10) solid red;
+}
+
+#box-3{
+  background-color: white;
+  border: calc(var(--box-size) / 10) solid grey;
+}
+#box-3:hover{
+  background-color: grey;
+  border: calc(var(--box-size) / 10) solid white;
+}
+
+#box-4{
+  background-color: green;
+  border: calc(var(--box-size) / 10) solid darkgreen;
+}
+#box-4:hover{
+  background-color: darkgreen;
+  border: calc(var(--box-size) / 10) solid green;
+}

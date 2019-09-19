@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>JavaScript Project - Home</title>
+
+	<script>
+		function alertDate(){
+			var today = new Date();
+			var message = "Today's Date: " + today.toLocaleDateString("en-US");
+			alert(message);
+		}
+	</script>
+	
+	<style>
+		li{
+			padding-bottom: 2em;
+			list-style: none;
+		}
+	</style>
+</head>
+<body>
+	<h1>JavaScript Project</h1>
+	<ul>
+		<li><button onclick="alertDate();">Date Alert</button></li>
+		<li><a href="NASA.html">NASA</a></li>
+		<li><a href="Calendar.html">Calendar</a></li>
+	</ul>
+</body>
+</html>

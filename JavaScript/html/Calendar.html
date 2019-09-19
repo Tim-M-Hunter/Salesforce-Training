@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>JavaScript Project - Calendar</title>
+	<script src="../js/Calendar.js"></script>
+	<style>
+		table{
+			border-collapse: collapse;
+			width: 100%;
+		}
+		table, th, td{
+			border: 1px solid black;
+		}
+		td{
+			height: 50px;
+			width: 14.28%;
+			text-align: center;
+		}
+		.dayCell{
+			height: 200px;
+		}
+		.dayNames{
+			background-color: lightgreen;
+		}
+		.fillerCell{
+			background-color: lightgrey;
+		}
+		#decreaseMonthCell, #increaseMonthCell {
+			background-color: #aaf;
+		}
+		#monthYearCell{
+			background-color: lightblue;
+		}
+	</style>
+</head>
+<body onload="initialize();">
+	<a href="index.html"><< Back</a> <br/> <br/>
+	
+	<div id="container"></div>
+</body>
+</html>

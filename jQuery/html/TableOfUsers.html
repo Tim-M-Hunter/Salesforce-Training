@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>jQuery Project - Table of Users</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="../js/TableOfUsers.js"></script>
+	<style>
+		table{
+			border-collapse: collapse;
+			margin-top: 1em;
+		}
+		table, th, td{
+			border: 1px solid black;
+			padding: 1em;
+		}
+		div{
+			text-align: center;
+		}
+		input{
+			margin-bottom: 1em;
+		}
+		
+		.modal {
+			display: none;
+			position: fixed;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: rgb(0,0,0);
+			background-color: rgba(0,0,0,0.4);
+		}
+		.modal-content{
+			background-color: #fefefe;
+			margin: 15% auto;
+			padding: 20px;
+			border: 1px solid #888;
+			width: 20%;
+		}
+		
+		.ui-resizable { position: relative;}
+		.ui-resizable-handle { position: absolute;font-size: 0.1px; display: block; }
+		.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
+		.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
+		.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+		.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
+		.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+		.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+		.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+		.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+		.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}
+	</style>
+</head>
+<body>
+	<a href="index.html"><< Back</a> <br/> <br/>
+	
+	<button onclick="showUserMenu();" id="newUserButton">New User</button>
+	<table id="usersTable">
+		<thead>
+			<tr>
+				<th><b>Name</b></th>
+				<th><b>Email</b></th>
+				<th><b>Password</b></th>
+			</tr>
+		</thead>
+	</table>
+	
+	<div class="modal">
+		<div class="modal-content">
+			<h2>New User</h2>
+			<div id="errorField" style="display: none; color: red; font-size: 12px;"> </div>
+			<label for="nameField">Name: </label>
+			<input type="text" id="nameField"> <br/>
+			<label for="emailField">Email: </label>
+			<input type="email" id="emailField"> <br/>
+			<label for="passwordField">Password: </label>
+			<input type="password" id="passwordField"> <br/> <br/>
+			<button onclick="submitNewUser()" id="submitButton">Add User</button>
+			<button onclick="closeModal();" id="closeButton">Cancel</button>
+		</div>
+	</div>
+</body>
+</html>

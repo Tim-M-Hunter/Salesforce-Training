@@ -1,0 +1,37 @@
+@charset "ISO-8859-1";
+
+:root{
+  --box-size: 10em;
+  --move-start: 5%;
+  --move-distance: 85%;
+  --num-rotations: 3;
+}
+
+#box{
+  width: var(--box-size);
+  height: var(--box-size);
+  background-color: pink;
+  position: relative;
+  
+  animation-name: move-spin;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move-spin{
+	0% {
+		left: var(--move-start);
+		background-color: pink;
+		transform: rotate(0deg);
+	}
+	50% {
+		left: var(--move-distance);
+		background-color: lightblue;
+		transform: rotate(calc(360deg * var(--num-rotations)));
+	}
+	100% {
+		left: var(--move-start);
+		background-color: pink;
+		transform: rotate(0deg);
+	}
+}

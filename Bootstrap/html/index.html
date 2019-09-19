@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Project - Home</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="../js/index.js"></script>
+</head>
+
+<!-- Code from W3Schools: https://www.w3schools.com/bootstrap/bootstrap_navbar.asp -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapseToggle">
+				<span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Bootstrap Project</a>
+		</div>
+		<div class="collapse navbar-collapse" id="collapseToggle">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Page 1-1</a></li>
+						<li><a href="#">Page 1-2</a></li>
+						<li><a href="#">Page 1-3</a></li>
+					</ul></li>
+				<li><a href="#">Page 2</a></li>
+				<li><a href="#">Page 3</a></li>
+			</ul>
+		
+		<form class="navbar-form navbar-right" action="/action_page.php">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search" data-toggle="tooltip" data-placement="left" title="Enter Search Here!">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+		</div>
+	</div>
+</nav>
+
+<body>
+	<!-- Code from W3Schools: https://www.w3schools.com/bootstrap/bootstrap_carousel.asp -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="../img/display.jpg" alt="Display Showing">
+				<div class="carousel-caption">
+					<h3>Display Showing</h3>
+					<p>Showing off that stuff!</p>
+				</div>
+			</div>
+
+			<div class="item">
+				<img src="../img/coffee.jpg" alt="Coffee and Pamphlets">
+				<div class="carousel-caption" id="coffeeTime">
+					<h3>Information Packets</h3>
+					<p>Coffee time!</p>
+				</div>
+			</div>
+
+			<div class="item">
+				<img src="../img/handshake.jpg" alt="Business Deal">
+			</div>
+			
+			<div class="item">
+				<img src="../img/cheer.jpg" alt="Cheery Interaction">
+			</div>
+		</div>
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="sr-only">Previous</span>
+		</a> 
+		<a class="right carousel-control" href="#myCarousel" data-slide="next"> 
+			<span class="glyphicon glyphicon-chevron-right"></span> 
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+	<div class="jumbotron">
+		<h1>Welcome to the Site!</h1>
+	</div>
+
+	<!-- Tabs and Grids section -->
+	<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#modalTab">Modal</a></li>
+		<li><a data-toggle="tab" href="#accordianTab">Accordian</a></li>
+		<li><a data-toggle="tab" href="#filterTableTab">Filter Table</a></li>
+		<li><a data-toggle="tab" href="#listsTab">Lists</a></li>
+		<li><a data-toggle="tab" href="#popoversTab">Popovers</a></li>
+		<li><a data-toggle="tab" href="#formTab">Form</a></li>
+	</ul>
+	<div id="tab-content" class="tab-content">
+
+		<div id="modalTab" class="tab-pane fade in active">
+			<div class="row">
+				<div class="col-sm-6">
+
+					<!-- W3Schools Code: https://www.w3schools.com/bootstrap/bootstrap_modal.asp -->
+					<img src="../img/coffee.jpg" data-toggle="modal"
+						data-target="#myModal" style="width: 100%;">
+					<div id="myModal" class="modal fade" role="dialog">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Coffee!</h4>
+								</div>
+								<div class="modal-body">
+									<img src="../img/coffee.jpg" style="width: 100%;">
+								</div>
+								<div class="modal-footer">
+									<p style="text-align: center;">Woohoo caffeine!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="accordianTab" class="tab-pane fade">
+			<div class="row">
+				<div class="col-sm-3">
+
+					<!-- W3Schools Code: https://www.w3schools.com/bootstrap/bootstrap_collapse.asp -->
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion"
+										href="#collapse1">Collapsible Group 1</a>
+								</h4>
+							</div>
+							<div id="collapse1" class="panel-collapse collapse">
+								<div class="panel-body">Content 1</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion"
+										href="#collapse2">Collapsible Group 2</a>
+								</h4>
+							</div>
+							<div id="collapse2" class="panel-collapse collapse">
+								<div class="panel-body">Content 2</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion"
+										href="#collapse3">Collapsible Group 3</a>
+								</h4>
+							</div>
+							<div id="collapse3" class="panel-collapse collapse">
+								<div class="panel-body">Content 3</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="filterTableTab" class="tab-pane fade">
+			<div class="row">
+				<div class="col-sm-3">
+
+					<input type="text" class="form-control" id="filterTableInput"
+						placeholder="Search...">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Firstname</th>
+								<th>Lastname</th>
+								<th>Email</th>
+							</tr>
+						</thead>
+						<tbody id="tableFields">
+							<tr>
+								<td>John</td>
+								<td>Doe</td>
+								<td>john@example.com</td>
+							</tr>
+							<tr>
+								<td>Mary</td>
+								<td>Moe</td>
+								<td>mary@example.com</td>
+							</tr>
+							<tr>
+								<td>July</td>
+								<td>Dooley</td>
+								<td>july@example.com</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="listsTab" class="tab-pane fade">
+			<div class="row">
+				<div class="col-sm-3">
+
+					<!-- W3Schools Code: https://www.w3schools.com/bootstrap/bootstrap_list_groups.asp -->
+					<ul class="list-group">
+						<li class="list-group-item">First item <span class="badge">2</span></li>
+						<li class="list-group-item">Second item <span class="badge">1</span></li>
+						<li class="list-group-item">Third item <span class="badge">0</span></li>
+						<li class="list-group-item">Fourth item <span class="badge">5</span></li>
+						<li class="list-group-item">Fifth item <span class="badge">4</span></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="popoversTab" class="tab-pane fade">
+			<div class="row">
+				<div class="col-sm-3">
+
+					<a href="#popoversTab" data-toggle="popover" html="true"
+						data-content="<a href='http://www.google.com' title='www.google.com'>Google</a>">Popover</a>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="formTab" class="tab-pane fade">
+			<div class="row">
+				<div class="col-sm-6">
+
+					<!-- W3Schools Code: https://www.w3schools.com/bootstrap/bootstrap_forms.asp -->
+					<form id="form">
+						<div class="form-group">
+							<label for="firstName">First Name:</label>
+							<input type="text" class="form-control" id="firstName" required>
+						</div>
+						<div class="form-group">
+							<label for="lastName">Last Name:</label>
+							<input type="text" class="form-control" id="lastName" required>
+						</div>
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" class="form-control" id="email" required>
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+
+<footer class="page-footer">
+	<div class="row">
+		<div class="col-sm-10" id=footerContent>Footer Content</div>
+		<div class="col-sm-2">Right Spacing</div>
+	</div>
+</footer>
+</html>

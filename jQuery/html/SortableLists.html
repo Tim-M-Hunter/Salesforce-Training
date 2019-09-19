@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>jQuery Project - Sortable Lists</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="../js/SortableLists.js"></script>
+	<style>
+		li {
+			border: 1px solid black;
+			padding: 1em;
+			cursor: pointer;
+			margin: 0.2em;
+			width: auto;
+			height: 1em;
+			color: white;
+			list-style-type: none;
+			text-align: center;
+		}
+		ul{
+			border: 1px solid black;
+			padding: 1em;
+			min-width: 10em;
+			min-height: 4em;
+		}
+		
+		#wrapper{
+			display: flex;
+			margin-bottom: 1em;
+		}
+		#greenList>li{
+			background-color: green;
+		}
+		#redList>li{
+			background-color: red;
+		}
+		#newItem{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<a href="index.html"><< Back</a> <br/> <br/>
+	
+	<div id="wrapper">
+		<ul id="greenList">
+			<li>Bob</li>
+			<li>Jill</li>
+			<li>Ralph</li>
+		</ul>
+		<ul id="redList">
+			<li>Susan</li>
+			<li>George</li>
+			<li>Marjy</li>
+		</ul>
+	</div>
+	<button onclick="addGreenItem();">Add Green Item</button>
+	<input type="text" id="newItem">
+	<button onclick="addRedItem();">Add Red Item</button>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>JavaScript Project - NASA Data</title>
+	<script src="../js/NASA.js"></script>
+	<style>
+		table{
+			border-collapse: collapse;
+			width: 100%;
+		}
+		td{
+			width: 30%;
+		}
+		table, th, td{
+			border: 1px solid black;
+			padding: 1em;
+		}
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+	</style>
+</head>
+
+<body onload="getData();">
+	<a href="index.html"><< Back</a> <br/> <br/>
+
+	<label for="dateField"><b>Select Date:</b></label>
+	<input id="dateField" type="date" onchange="changeDate();">
+	<br/> <br/>
+	<div id="content">
+		<table>
+			<tr>
+				<td><b>Title</b></td>
+				<td id="imageTitle"></td>
+				<td rowspan="4"><img id="imagePicture"></td>
+			</tr>
+			<tr>
+				<td><b>Explanation</b></td>
+				<td id="imageExplanation"></td>
+			</tr>
+			<tr>
+				<td><b>Name</b></td>
+				<td id="imageName"></td>
+			</tr>
+			<tr>
+				<td><b>Copyright</b></td>
+				<td id="imageCopyright"></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

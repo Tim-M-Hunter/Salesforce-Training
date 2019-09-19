@@ -1,0 +1,49 @@
+@charset "ISO-8859-1";
+
+/* Navbar display details */
+.navbar {
+	background: rgba(0,0,0,0.8);
+}
+
+@media (max-width: 770px) {
+	.navbar{
+		background-color: black;
+	}
+}
+
+/* Carousel display details */
+.carousel {
+	top: 3.67em;
+}
+.carousel-inner > .item > img {
+  width: 100%;
+  height: 100%;
+}
+.carousel-indicators li{
+	border-radius: 0;
+}
+.carousel-caption {
+	background: rgba(255, 255, 255, 0.6);
+	color: black;
+}
+#coffeeTime{
+	top: 0;
+    bottom: auto;
+}
+
+/* Other styling */
+.jumbotron{
+	text-align: center;
+}
+
+#tab-content{
+	min-height: 20em;
+}
+
+.page-footer {
+	background-color: lightgrey;
+	width: 100%;
+	min-height: 5em;
+	margin-top: 1em;
+	padding: 1em;
+}
