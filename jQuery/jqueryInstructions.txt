@@ -1,0 +1,15 @@
+Here are the JQuery (and JQuery UI) assignments:
+
+I want two (jQuery UI sortable) lists displayed in a box.
+The list on the left should be green
+The list on the right should be red
+I want to be able to drag items between the list and when I do their color should update.
+I want to be able to remove items from the list by dragging them outside of the box.
+I want to be able to add items to either list.
+
+Create a table of users
+I want the table to display Name, Email, and Password.
+I want to be able to add users to the table with a create new user button.
+This button should open a modal that has input fields for the above fields.
+This modal should be draggable and resizable.
+I want validation on the fields, they should be at least 3 characters long and emails must include @

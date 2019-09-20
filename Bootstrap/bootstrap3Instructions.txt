@@ -1,0 +1,51 @@
+I've written this document similarly to how a client might write up specifications.
+
+Create a Bootstrap 3 navbar at the top of the page.
+	- It needs to be fixed to the top.
+	- I want 3 links in the navbar.
+	- I want 1 of the 3 links to be a drop down menu.
+	- On the right side of the navbar, please add a search bar with a submit button.
+	- I want a Bootstrap 3 tool tip displayed to the left of the search box when I hover over it.
+	- It needs to be slightly transparent, but only when I'm on my desktop.
+	- Please make it collapse when on a mobile device.
+
+I want a Bootstrap 3 slideshow of at least 4 slides
+	- Please put captions on two of the slides.
+	- I want my captions in different locations.
+	- It needs to be appear under the Navbar.
+	- I don't like the circle indicators, please make them squares.
+
+Create a Bootstrap 3 Jumbotron below the slideshow welcoming people to the site.
+
+Use the Bootstrap 3 Grid system to create 3 columns in 1 row below the Jumbotron.
+
+Create a set of tabs inside the grid:
+All of the tabs should be 3 columns long, unless otherwise specified.
+	- Modal Tab
+		- I should be able to click an image and see the clicked image in a Bootstrap 3 modal with a caption.
+		- This tab should be 6 columns long.
+	- Accordion Tab
+		- I want to be able to click an element and have it expand with more information.
+		- I want at least three items in my accordion and the should collapse when I open another.
+	- Filter Table Tab
+		- I want a text input and a table of items.
+		- I want to be able to filter the table by the text entered.
+	- Lists Tab
+		- I want a Bootstrap 3 list group of 5 items.
+		- I want all of my list items to have Bootstrap 3 badges next to them.
+	- Popovers Tab
+		- I want a Bootstrap 3 popover to toggle on a link.
+	- Form Tab
+		- I want a form with Bootstrap styling.
+		- I want my form to be 6 columns long.
+		- I want my form to have 3 input fields.
+			- First name
+			- Last name
+			- Email
+		- My form should have validation.
+			- All fields should be required
+			- email should contain an @
+
+I want a footer on my web page, it should expand the full width of the page.
+	- I want a zone I can use to put all my cool content on the left.
+	- I want 2 columns on the right side of the footer.

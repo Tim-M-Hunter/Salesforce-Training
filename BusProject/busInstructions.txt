@@ -1,0 +1,19 @@
+Here are the requirements for the bus reservation project:
+
+·       Store the customer info (name, address, credit card number)
+
+·       Store the trip info: reservation #, trip date, bus #, seat #
+
+·       Show the customer a seat map
+
+·       Allow the customer to change / cancel reservation
+
+·       Charge the customer for bags checked
+
+ 
+
+Assume there are 2 buses available, each with 3 fares (premium, business, coach):
+
+·       Rocket bus: $50, $35, $20 - $7 per bag
+
+·       Deluxe bus: $100, $70, $50 - $15 per bag

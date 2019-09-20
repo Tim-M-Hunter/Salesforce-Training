@@ -1,0 +1,11 @@
+Create a button to alert the current date.
+
+Display the data from this link: https://api.nasa.gov/planetary/apod?api_key=jT9a9djmlXvr6QGYLXet52uTP4ycNUGYnqdQeCA7
+It should display today's data by default
+Please display the Title, Description, Image, the image name, and the person that took the picture.
+I want to be able to request information on other dates.
+
+Create a calendar
+Display all the days of the current month
+Display the current date differently
+Gray out the days outside of the month
